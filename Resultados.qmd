@@ -1,0 +1,28 @@
+---
+title: "Resultados"
+format: html
+editor: visual
+---
+
+## Resultados
+
+```{r}
+library(sf)
+library(dplyr)
+
+# Cargar los shapefiles
+
+equipamiento <- 'preparatorias'
+
+resultado_manzanas <- st_read(paste0(equipamiento, '/', 'manzanas_resultados.shp'), quiet = TRUE)
+manzanas_poligonos <- st_read('poligonos/ED10_mnz_bachillerato_2024.shp')
+
+# Realizar el join en la columna `cvegeo` para incluir todas las columnas
+manzanas_poligonos <- manzanas_poligonos %>%
+  st_join(resultado_manzanas, by = "CVEGEO")
+
+```
+
+```{r}
+st_write(manzanas_poligonos, paste0(equipamiento, '/', 'manzanas_poligonos.shp'))
+```
