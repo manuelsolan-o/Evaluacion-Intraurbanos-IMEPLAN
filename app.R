@@ -1,3 +1,19 @@
+# Lista de paquetes necesarios
+required_packages <- c("shiny", "sf", "bslib", "qgisprocess", "terra", "dplyr")
+
+# Función para instalar paquetes faltantes
+install_if_missing <- function(packages) {
+  for (pkg in packages) {
+    if (!require(pkg, character.only = TRUE)) {
+      install.packages(pkg, dependencies = TRUE)
+      library(pkg, character.only = TRUE)
+    }
+  }
+}
+
+# Instalar los paquetes faltantes
+install_if_missing(required_packages)
+
 # Cargar las librerías necesarias
 library(shiny)
 library(sf)
