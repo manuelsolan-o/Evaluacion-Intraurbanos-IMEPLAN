@@ -13,6 +13,7 @@ Este fue un proyecto interdisciplinar, donde la ciencia de datos fue clave para 
 
 ## Instalación
 
+Nota: Se recomienda instalar Github Desktop para mayor fácilidad. Veáse el siguiente video: [enlace](https://www.youtube.com/watch?v=ChVqT1MrAsM&ab_channel=Codisi)
 Debes tener instalado R studio para poder continuar
 
 1) Clonar este repositorio
