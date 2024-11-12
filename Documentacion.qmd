@@ -225,89 +225,87 @@ Para calcular el índice de oferta y demanda se utiliza una misma fórmula pero 
 ## Fórmulas para subsistema de educación
 
 ### Preescolar
-
 $$
-\text{Indice} = \text{Aula_oferta} - \text{Aula_demanda}
+Indice = Aula_{oferta} - Aula_{demanda}
 $$
-
 $$
-\text{Indice_norm} = \frac{2}{1 + e^{-0.4 \times \text{Indice}}} - 1
+Indice_{norm} = \frac{2}{1 + e^{-0.4 \times Indice}} - 1
 $$
 
 ### Primaria
-
 $$
-\text{IndicePrimaria} = \text{Aula_oferta} - \text{Aula_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-0.2 \times \text{IndicePrimaria}}} - 1
+Indice_{Primaria} = Aula_{oferta} - Aula_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-0.2 \times Indice_{Primaria}}} - 1
 $$
 
 ### Educación especial
-
 $$
-\text{Indice} = \text{Aula_oferta} - \text{Aula_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-2.5 \times \text{Indice}}} - 1
+Indice = Aula_{oferta} - Aula_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-2.5 \times Indice}} - 1
 $$
 
 ### Secundaria
-
 $$
-\text{IndiceSecundaria} = \text{Aula_oferta} - \text{Aula_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-0.5 \times \text{IndiceSecundaria}}} - 1
+Indice_{Secundaria} = Aula_{oferta} - Aula_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-0.5 \times Indice_{Secundaria}}} - 1
 $$
 
 ### Preparatoria
-
 $$
-\text{IndicePrepa_v2} = \text{Prepa_oferta} - \text{Prepa_demanda}
-$$ $$
-\text{IndicePrepaNorm_v2} = \frac{2}{1 + e^{-2.5 \times \text{IndicePrepa_v2}}} - 1
+Indice_{Prepa\_v2} = Prepa_{oferta} - Prepa_{demanda}
+$$
+$$
+Indice_{PrepaNorm\_v2} = \frac{2}{1 + e^{-2.5 \times Indice_{Prepa\_v2}}} - 1
 $$
 
 ## Fórmulas para subsistema de abasto de alimentos
 
 ### Tianguis
-
 $$
-\text{Indice_Tiangui} = \text{Tiangui_oferta} - \text{Tiangui_demanda}
-$$ $$
-\text{Indice_norm_tiangui} = \frac{2}{1 + e^{-0.035 \times \text{Indice_Tiangui}}} - 1
+Indice_{Tiangui} = Tiangui_{oferta} - Tiangui_{demanda}
+$$
+$$
+Indice_{norm\_tiangui} = \frac{2}{1 + e^{-0.035 \times Indice_{Tiangui}}} - 1
 $$
 
 ### Mercados
-
 $$
-\text{Indice_Mercado} = \text{Mercado_oferta} - \text{Mercado_demanda}
-$$ $$
-\text{Indice_norm_Mercado} = \frac{2}{1 + e^{-0.06 \times \text{Indice_Mercado}}} - 1
+Indice_{Mercado} = Mercado_{oferta} - Mercado_{demanda}
+$$
+$$
+Indice_{norm\_Mercado} = \frac{2}{1 + e^{-0.06 \times Indice_{Mercado}}} - 1
 $$
 
 ## Fórmulas para subsistema de salud
 
 ### Subsistema de salud - Grupo 1
-
 $$
-\text{Indice} = \text{Grupo1_oferta} - \text{Grupo1_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-3.5 \times \text{Indice}}} - 1
+Indice = Grupo1_{oferta} - Grupo1_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-3.5 \times Indice}} - 1
 $$
 
 ### Subsistema de salud - Grupo 2
-
 $$
-\text{Indice} = \text{Salud_oferta} - \text{Salud_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-5 \times \text{Indice}}} - 1
+Indice = Salud_{oferta} - Salud_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-5 \times Indice}} - 1
 $$
 
 ### Subsistema de salud - Grupo 3
-
 $$
-\text{Indice} = \text{Grupo3_oferta} - \text{Grupo3_demanda}
-$$ $$
-\text{Indice_norm} = \frac{2}{1 + e^{-2.5 \times \text{Indice}}} - 1
+Indice = Grupo3_{oferta} - Grupo3_{demanda}
+$$
+$$
+Indice_{norm} = \frac{2}{1 + e^{-2.5 \times Indice}} - 1
 $$
 
 Es por eso que se realizó esta automatización a este proceso:
