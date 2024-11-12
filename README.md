@@ -13,5 +13,10 @@ Este fue un proyecto interdisciplinar, donde la ciencia de datos fue clave para 
 
 ## Instalación
 
-1) Clonar el repo
+Debes tener instalado R studio para poder continuar
+
+1) Clonar este repositorio
+Existe una excelente guía de instalación en el siguiente enlace para clonar un repositorio de github:
+https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository
+
 2) Correr el archivo app.R
